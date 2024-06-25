@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:#2826b9;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    height: 100vh;
+
+}
+
+.container .loader{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0 20px;
+}
+
+.loader .loading{
+    width: 30px;
+    height:30px;
+    background: #ffffff;
+    border-radius: 50px;
+    margin: 0 10px;
+    /* animation:load .5s ease infinite; */
+    animation-name:load;
+    animation-duration: 10s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+}
+
+.loader .loading.one{
+    animation-delay:.2s;
+}
+
+.loader .loading.two{
+    animation-delay:.3s;
+}
+
+.loader .loading.three{
+    animation-delay:.4s;
+}
+
+
+
+
+@keyframes load {
+    0% {
+        width:30px;
+        height: 30px;
+    }
+    50%{
+        width:50px;
+        height:50px;
+    }
+}
+
