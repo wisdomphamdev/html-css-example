@@ -28,7 +28,7 @@ body{
     margin: 0 10px;
     /* animation:load .5s ease infinite; */
     animation-name:load;
-    animation-duration: 10s;
+    animation-duration: 1s;
     animation-timing-function: ease;
     animation-iteration-count: infinite;
 }
